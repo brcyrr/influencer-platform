@@ -1,0 +1,12 @@
+{
+  "name": "influencer-platform",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "dev": "pnpm --parallel --filter api --filter web dev",
+    "lint": "pnpm --filter api --filter web lint",
+    "typecheck": "pnpm --filter api --filter web typecheck",
+    "db:migrate": "pnpm --filter api db:migrate",
+    "db:seed": "pnpm --filter api db:seed"
+  }
+}
